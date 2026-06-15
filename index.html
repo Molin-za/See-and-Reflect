@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>See &amp; Reflect</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<main id="home" class="screen active">
+  <div class="home-center">
+    <h1 class="home-title">See &amp; Reflect</h1>
+    <p class="home-sub">Observe the light. Discover the rules.</p>
+    <button id="start-btn" class="home-btn">Start Game</button>
+  </div>
+</main>
+
+<section id="chapters" class="screen">
+  <button id="chapter-back" class="back-btn">← Back</button>
+  <h2 class="page-heading">Select Chapter</h2>
+  <div id="chapter-grid" class="card-grid"></div>
+</section>
+
+<section id="levels" class="screen">
+  <button id="level-back" class="back-btn">← Back</button>
+  <h2 id="level-title" class="page-heading">Select Level</h2>
+  <div id="level-grid" class="card-grid"></div>
+</section>
+
+<section id="game" class="screen">
+  <div id="game-bar">
+    <button id="game-back" class="back-btn">← Back</button>
+    <div class="spacer"></div>
+    <button id="reset-btn" class="bar-btn">恢复</button>
+    <button id="goal-btn" class="bar-btn">目标</button>
+  </div>
+  <canvas id="game-canvas"></canvas>
+  <div id="preview-badge">演示中</div>
+  <div id="complete-badge">Level Complete</div>
+</section>
+
+<script src="js/particles.js"></script>
+<script src="js/light-rays.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/chapters.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/game.js"></script>
+<script src="js/levels/1-0.js"></script>
+<script src="js/levels/1-1.js"></script>
+<script src="js/levels/1-2.js"></script>
+<script src="js/levels/2-0.js"></script>
+<script src="js/levels/2-1.js"></script>
+<script src="js/levels/2-2.js"></script>
+<script src="js/levels/2-3.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.SR.reg('1-0',{name:'开关',scale:6,sources:[{gx:0,gy:2,dx:0,dy:-1,type:'e'},{gx:0,gy:-2,type:'r'}],reflectors:[],goalLit:[null,true]});

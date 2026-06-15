@@ -1,0 +1,1 @@
+window.SR.reg('2-3',{name:'或',scale:12,hitR:6,sources:[{gx:-4,gy:-1,dx:1,dy:0,type:'e'},{gx:-3,gy:3,dx:3,dy:-1,type:'e'},{gx:-2,gy:1,dxs:[0,2],dys:[-1,1],type:'e'},{gx:0,gy:2,dx:3,dy:-1,type:'x'},{gx:-2,gy:-1,dx:3,dy:-1,type:'x'},{gx:3,gy:1,type:'r'},{gx:1,gy:-2,type:'r'}],goalLit:[null,null,null,null,null,false,true]});

@@ -1,0 +1,1 @@
+window.SR.reg('1-1',{name:'反射',scale:9,hitR:8,sources:[{gx:-3,gy:3,dx:2,dy:-1,type:'e'},{gx:-3,gy:-3,type:'r'}],reflectors:[{gx:3,gy1:1,gy2:-1,gw:.3}],goalLit:[null,true]});

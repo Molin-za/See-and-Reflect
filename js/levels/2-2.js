@@ -1,0 +1,1 @@
+window.SR.reg('2-2',{name:'与',scale:9,hitR:4,sources:[{gx:-3,gy:3,dx:1,dy:-1,type:'e'},{gx:-3,gy:-3,dx:1,dy:1,type:'e'},{gx:0,gy:0,dx:1,dy:0,type:'a'},{gx:3,gy:0,type:'r'}],goalLit:[null,null,null,true]});
