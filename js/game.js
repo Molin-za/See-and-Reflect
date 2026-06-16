@@ -13,7 +13,7 @@ function rs(sr,ox,oy,ar,hr){var dx=Math.cos(ar),dy=Math.sin(ar),bi=-1,bd=1/0;for
 
 window.SR.Game=function(cvid){
   var s=this;s.cv=document.getElementById(cvid);s.c=s.cv.getContext('2d');
-  s.sr=[];s.rf=[];s.sg=[];s.ry=[];s.srR=16;s.glit=null;s.done=false;s.prev=false;s.hitR=4;
+  s.sr=[];s.rf=[];s.sg=[];s.ry=[];s.srR=Math.max(5,16*innerWidth/1920);s.glit=null;s.done=false;s.prev=false;s.hitR=4;
   s.svl=null;s.sgv=null;s.svry=null;s.svd=false;
   s.cv.addEventListener('click',function(e){
     if(s.done)return;var r=s.cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
@@ -23,7 +23,7 @@ window.SR.Game=function(cvid){
 
 window.SR.Game.prototype.ld=function(k){
   var d=window.SR._reg[k];if(!d)return;
-  this.key=k;this.done=false;this.glit=d.goalLit||null;this.hitR=d.hitR||4;
+  this.key=k;this.done=false;this.glit=d.goalLit||null;this.hitR=(d.hitR||4)*innerWidth/1920;
   this.cv.width=innerWidth;this.cv.height=innerHeight-48;
   var w=this.cv.width,h=this.cv.height,sc=d.scale||6;
   this.sr=[];for(var i=0;i<d.sources.length;i++){
